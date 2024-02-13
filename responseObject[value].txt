@@ -1,0 +1,22 @@
+I see that you are working on a chat interface using HTML and JavaScript. 👍
+
+The reason why you access the value of responseObject as an array is because you are using a variable as the key. In JavaScript, you can access the properties of an object in two ways: using the dot notation or using the bracket notation1. The dot notation is more concise and readable, but it only works with fixed keys that are valid identifiers. For example, you can use the dot notation to access the hello property of responseObject like this:
+
+
+responseObject.hello; // "hey ! How are you doing ?"
+
+
+However, if you want to use a variable as the key, or if the key is not a valid identifier (such as a number or a string with spaces), you have to use the bracket notation. The bracket notation allows you to use any expression as the key, as long as it evaluates to a string. For example, you can use the bracket notation to access the hello property of responseObject using a variable like this:
+
+let value = "hello";
+responseObject[value]; // "hey ! How are you doing ?"
+
+
+If you try to use the dot notation with a variable, you will get an error, because the dot notation will look for a property with the name of the variable, not the value of the variable. For example, this code will throw an error:
+
+
+let value = "hello";
+responseObject.value; // undefined
+
+
+This is because there is no property called value in responseObject. You can find more information and examples of how to access the properties of an object in JavaScript here, here, here, here, and here. I hope this helps you. 😊

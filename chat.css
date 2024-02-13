@@ -1,0 +1,130 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(135deg, yellow,  green);
+}
+.container{
+    height: 99vh;
+    width: 40vw;
+    
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+    
+}
+
+.navbar{
+    display: flex;
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: rgb(11, 90, 0);
+    opacity: .8;
+    padding: 10px;
+    height: 10%;
+    color: rgb(204, 255, 194);
+    button{
+        font-size: 1em;
+        color: rgb(204, 255, 194);
+        margin: 0 3px;
+    }
+    
+}
+.navbar img{
+    height: 140%;
+}
+.message{
+    
+    padding: 0 8px;
+    height: 80%;
+    overflow: auto;
+    background-color: rgb(222, 254, 216)  
+}
+.query-container{
+    display: flex;
+    flex-direction:column;
+    align-items: end; 
+    
+}
+.query{
+    background-color: rgb(127, 255, 244);
+    max-width: 80%;
+    margin-top: 5px;
+    border-radius: 10px 0 ;
+    padding: 3px;
+    
+}
+.answer-container{
+    display: flex;
+    flex-direction:column;
+    align-items: baseline;
+   
+}
+.answer{
+    background-color: rgb(204, 207, 129);
+    max-width: 80%;
+    margin-top: 5px;
+    border-radius: 0 10px;
+    padding: 3px;
+}   
+.interact{
+    height: 10%;
+    bottom: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    background-color: rgb(11, 90, 0);
+    
+}
+
+#message{
+    height: 2em;
+    font-size: 1.2em;
+    width: 90%;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(246, 255, 245);
+}
+#sent{
+    font-size: 1.6em;
+    border: 0;
+    background-color: transparent;
+    margin: 0 3px;
+    padding: 5px;
+    color: rgb(204, 255, 194);
+}
+button{
+    background-color: transparent;
+    border: 0;
+}
+button:hover , i:hover{
+    color: rgb(162, 251, 90);
+}
+
+.hover{
+    position: absolute;
+    background-color: rgb(11, 90, 0);
+    font-size: .8em;
+    text-transform: lowercase;
+    top: 10%;
+    right: 0;
+    padding: 5px;
+    display: none;
+    li:hover{
+        color: rgb(162, 251, 90);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 700px){
+    .container{
+        width: 100vw;
+    }
+}
