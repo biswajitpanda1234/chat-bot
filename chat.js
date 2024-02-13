@@ -1,9 +1,9 @@
-//import apiKeys from "./apikey.js";
+import apiKeys from "./apikey.js";
 // get data from api
 
 async function getData(value){
     
-    const apiKeys = "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";
+    
     const url = "https://api.openai.com/v1/chat/completions";
     const requestOptions = {
         method: "POST",
